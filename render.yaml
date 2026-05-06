@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: voiceflow-bolna-dashboard
+    runtime: node
+    buildCommand: npm install --cache /tmp/npm-cache && npm run build
+    startCommand: npm run seed && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: DEMO_MODE
+        value: true
+      - key: BOLNA_API_KEY
+        sync: false
+      - key: BOLNA_API_URL
+        value: https://api.bolna.ai
