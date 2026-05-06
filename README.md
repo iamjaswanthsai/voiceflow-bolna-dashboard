@@ -81,7 +81,7 @@ The agent uses a carefully engineered prompt with:
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/voiceflow-bolna-dashboard.git
+git clone https://github.com/iamjaswanthsai/voiceflow-bolna-dashboard.git
 cd voiceflow-bolna-dashboard
 
 # Install dependencies
