@@ -6,8 +6,11 @@
 ![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?logo=vite&logoColor=white)
 ![Bolna](https://img.shields.io/badge/Bolna-Voice_AI-3b82f6)
+[![Deployed on Render](https://img.shields.io/badge/Deployed-Render-46E3B7?logo=render&logoColor=white)](https://voiceflow-bolna-dashboard.onrender.com)
 
 ## 🚀 Live Demo
+
+🔗 **Deployed App**: [https://voiceflow-bolna-dashboard.onrender.com](https://voiceflow-bolna-dashboard.onrender.com)
 
 **Full Flow**: User → Web App → Bolna Voice Agent → Backend Webhook → Structured Output
 

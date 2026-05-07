@@ -310,7 +310,7 @@ npm run dev                  # Starts both frontend (5173) and backend (3001)
 
 ### Links
 - **GitHub:** https://github.com/iamjaswanthsai/voiceflow-bolna-dashboard
-- **Deployed:** [Your Render URL here]
+- **Deployed:** https://voiceflow-bolna-dashboard.onrender.com
 - **Bolna Agent ID:** d8caa094-02a3-4580-9069-395e5f0e2b95
 - **Bolna Platform:** https://platform.bolna.ai
 
