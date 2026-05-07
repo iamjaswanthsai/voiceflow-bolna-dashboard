@@ -95,7 +95,15 @@ router.get('/analytics', (req, res) => {
 // ──────────────── AGENT CONFIG ────────────────
 
 router.get('/agent-config', (req, res) => {
-  res.json(getAgentConfig());
+  const config = getAgentConfig();
+  const apiKey = process.env.BOLNA_API_KEY || '';
+  config.bolna_api_configured = apiKey && apiKey !== 'demo_key';
+  config.bolna_api_key_masked = apiKey ? apiKey.slice(0, 6) + '••••••••' + apiKey.slice(-4) : 'Not configured';
+  // Auto-detect webhook URL based on request host
+  const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+  const host = req.headers['x-forwarded-host'] || req.get('host');
+  config.webhook_url = `${protocol}://${host}/api/webhook/bolna`;
+  res.json(config);
 });
 
 router.put('/agent-config', (req, res) => {

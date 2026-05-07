@@ -55,14 +55,14 @@ export async function renderSettings(container) {
           <div class="form-group">
             <label class="form-label">Webhook URL</label>
             <div class="webhook-url-display">
-              <span id="webhook-url">${config.webhook_url || 'http://localhost:3001/api/webhook/bolna'}</span>
+              <span id="webhook-url">${config.webhook_url}</span>
               <button class="copy-btn" id="btn-copy-webhook">Copy</button>
             </div>
           </div>
           <div class="form-group">
             <label class="form-label">Bolna API Key</label>
             <div class="api-key-input">
-              <input class="form-input" id="cfg-api-key" type="password" value="demo_key_not_configured" />
+              <input class="form-input" id="cfg-api-key" type="password" value="${config.bolna_api_key_masked}" readonly />
               <button class="api-key-toggle" id="btn-toggle-key">Show</button>
             </div>
           </div>
